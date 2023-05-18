@@ -1,5 +1,246 @@
+<!DOCTYPE html>
 <html>
-    <body>
-        canottaggio
-    </body>
+<head>
+  <title>CENTRO REMIERO</title>
+  <style>
+    /* Stili CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #030b2067;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .horizontal-menu {
+  background-color: #f1f1f1;
+}
+
+.horizontal-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.horizontal-menu ul li {
+  position: relative;
+}
+
+.horizontal-menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.horizontal-menu ul li:hover > a {
+  background-color: #ccc;
+}
+
+.horizontal-menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.horizontal-menu .submenu li {
+  width: 100%;
+}
+
+.horizontal-menu ul li:hover > .submenu {
+  display: block;
+}
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+    .slider {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+    footer {
+      background-color: #030b2067;;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+  <script>
+    // JavaScript
+    function showAlert() {
+      alert("IL NOSTRO MOTTO");
+    }
+  </script>
+</head>
+<body>
+  <header>
+   <strong> <h1>CENTRO REMIERO</h1> </strong>
+  </header>
+  <nav class="horizontal-menu">
+    <ul>
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Club house </a>
+        <ul class="submenu">
+          <li><a href="gym.html">Fitness romms </a></li>
+          <li><a href="CLASSROOM.html">Classroom</a></li>
+          <li><a href="fisio.html">Infirmary/fisio</a></li>
+        </ul>
+      </li>
+      <li>
+       <a href="#">On Board</a>
+       <ul class="submenu">
+        <li><a href="#">i nostri soci</a></li>
+       </ul>
+      <li>
+        <a href="#">Rowimg Winter Challeng</a>
+      </li>
+      <li>
+        <a href="stroia.html">Contattaci</a>
+      </li>
+     
+    </ul>
+  </nav>
+  
+  <title>Carosello</title>
+  <style>
+    /* Stili per il carosello */
+    .carousel {
+      width: 100%px;
+      height: 300px;
+      overflow: hidden;
+      position: relative;
+      margin-left: 34%;
+
+    }
+    
+    .carousel .slide {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+     
+    }
+    
+    .carousel .slide.active {
+      opacity: 1;
+    }
+    
+    /* Stili per i pulsanti di navigazione */
+    .carousel .nav-btns {
+      position: absolute;
+      bottom: 10px;
+      margin-left: 25%;
+      transform: translateX(-50%);
+      display: flex;
+    }
+    
+    .carousel .nav-btns button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: none;
+      margin: 0 5px;
+      padding: 0;
+      background-color: #333;
+      cursor: pointer;
+    }
+    
+    .carousel .nav-btns button.active {
+      background-color: #fff;
+    }
+    .m{
+     margin-left:35%;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <div class="slide active">
+      <img src="https://static.wixstatic.com/media/76bff0_6c6df45f0c5e4121b54abf0cd1397f6d~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/76bff0_6c6df45f0c5e4121b54abf0cd1397f6d~mv2.jpg" alt="Immagine 1">
+    </div>
+    <div class="slide">
+      <img src="https://www.eccolecco.it/wp-content/uploads/lago-di-pusiano-casartelli.jpg" alt="Immagine 2">
+    </div>
+    <div class="slide">
+      <img src="image3.jpg" alt="Immagine 3">
+    </div>
+    <div class="nav-btns">
+      <button class="active"></button>
+      <button></button>
+      <button></button>
+    </div>
+  </div>
+
+  <script>
+    // Codice JavaScript per gestire il carosello
+    var slides = document.querySelectorAll('.slide');
+    var buttons = document.querySelectorAll('.nav-btns button');
+    var currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach(function(slide) {
+        slide.classList.remove('active');
+      });
+
+      buttons.forEach(function(button) {
+        button.classList.remove('active');
+      });
+
+      slides[index].classList.add('active');
+      buttons[index].classList.add('active');
+    }
+
+    buttons.forEach(function(button, index) {
+      button.addEventListener('click', function() {
+        currentSlide = index;
+        showSlide(currentSlide);
+      });
+    });
+
+    // Avvia il carosello con il primo slide
+    showSlide(currentSlide);
+  </script>
+</body>
+  
+  <main>
+    
+    <div class="m">  <p>E' un'arte grandiosa, il canottagio. </p>
+      <P> E' l'arte più eccelsa che esista. </P>
+        <p>E' una sinfonia di movimento. </p>
+      <p>Quando voghi bene, rasenta la perfezione e quando rasenti la perfezione è come sfiorare il divino. </p>
+       <p> sfiora la parte più vera di te, che è la tua anima. </p>
+  George Yeoman Pocock</p> </div>
+   
+    <button onclick="showAlert()">ROW TO GROW</button>
+  </main>
+
+  <footer>
+    &copy; 2023 Il mio sito web. Tutti i diritti riservati.
+  </footer>
+</body>
 </html>
+
+        
+        

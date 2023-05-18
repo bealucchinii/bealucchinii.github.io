@@ -1,121 +1,44 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  
- 
 <head>
-    
-    <
-
-   
-<title>Storia del Centro Remiero</title>
-    
-   
-<style>
-      /* CSS per la
-
-     
-
-      /* CSS per la formattazione della pagina */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-      }
-      
-      h1 {
-        text-align: center;
-      }
-      
-      p {
-        line-height: 1.5;
-      }
-      
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-      
-      .image {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      
-      .image img {
-        max-width: 100%;
-      }
-    </style>
-  
- 
+  <title>Mappa di Google Maps</title>
+  <style>
+    /* Stile per il contenitore della mappa */
+    #map {
+      width: 400px;
+      height: 300px;
+    }
+  </style>
 </head>
-  
- 
 <body>
-    
-   
-<div class="container">
-      
-    
+  <h1>La mia posizione su Google Maps</h1>
+  <div id="map"></div>
 
-     
-<h1>Storia del Centro Remiero</h1>
-      
-      
-      
-     
+  <script>
+    // Codice JavaScript per inizializzare la mappa
+    function initMap() {
+      // Costruisci un oggetto LatLng per la tua posizione
+      var myLatLng = { lat: 40.7128, lng: -74.0060 }; // Esempio: New York City
 
-      
-<div class="image">
-        
-      
+      // Opzioni per la mappa
+      var mapOptions = {
+        zoom: 12,
+        center: myLatLng
+      };
 
-       
-<img src="immagine.jpg" alt="Immagine del centro remiero">
-      
-     
-</div>
-      
-      
-      
-     
+      // Crea un nuovo oggetto mappa
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-      
-     
+      // Crea un marker per la tua posizione
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'La mia posizione'
+      });
+    }
+  </script>
 
-      
-<p>Il Centro Remiero è stato fondato nel 1980 da un gruppo di appassionati di canottaggio con l'obiettivo di promuovere questo sport nella nostra comunità. Da allora, siamo cresciuti fino a diventare uno dei centri remieri più rinomati della regione.</p>
-      
-      
-      
-     
-
-      
-<p>La nostra storia è caratterizzata da numerosi successi e conquiste nel mondo del canottaggio. Nel corso degli anni, i nostri atleti hanno partecipato a competizioni nazionali e internazionali, portando a casa medaglie e riconoscimenti prestigiosi.</p>
-      
-      
-      
-      
-
-      
-     
-
-      
-<p>Oltre agli allenamenti e alle competizioni, il nostro centro offre anche corsi di canottaggio per principianti di tutte le età. Siamo orgogliosi di aver introdotto molte persone a questo meraviglioso sport e di aver contribuito alla formazione di nuovi talenti nel canottaggio.</p>
-      
-      
-      
-     
-
-      
-     
-
-      
-<p>Continuiamo a crescere e a promuovere il canottaggio nella nostra comunità. Siamo grati a tutti coloro che hanno reso possibile il nostro successo e non vediamo l'ora di scrivere nuovi capitoli della nostra storia nel mondo del canottaggio.</p>
-    
-   
-</div>
-  
- 
+  <!-- Includi l'API di Google Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=TUA_API_KEY&callback=initMap" async defer></script>
 </body>
-
-</
 </html>

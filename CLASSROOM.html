@@ -2,7 +2,7 @@
     <head>
        
      <title>Il mio sito con sfondo colorato e menu a scelta</title> 
-        <style> body { background-color: rgb(60, 196, 239); } 
+        <style> body { background-color: rgb(235, 239, 240); } 
         nav { background-color: rgba(112, 110, 101, 0.479); display: flex; justify-content: center; align-items: center; padding: 10px 0; } 
         nav a { color: white; font-size: 18px; margin: 0 10px; text-decoration: none; text-transform: uppercase; transition: all 0.2s ease-in-out; } 
         nav a:hover { color: rgb(251, 254, 255); background-color: white; border-radius: 5px; } h1 { text-align: center;  color: rgba(30, 129, 196, 0.911); font-size: 48px; } 
@@ -26,7 +26,7 @@
 
     </style>
          </head> 
-         <body> <nav> <a href="scopri.html">CLUBHOUSE</a> </a> 
+         <body> <nav> <a href="onboard.html">Home</a> </a> 
         </nav>
         <head>
           <style>
@@ -80,9 +80,31 @@
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="path/to/first-image.jpg" alt="Prima immagine">
-        <img src="path/to/second-image.jpg" alt="Seconda immagine">
-    </div>
+  <html>
+    <head>
+      <title>Immagini vicine al centro</title>
+      <style>
+        /* Stili per il contenitore principale */
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        
+        /* Stili per le immagini */
+        .container img {
+          width: 200px;
+          margin: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <img src="image1.jpg" alt="Immagine 1">
+        <img src="image2.jpg" alt="Immagine 2">
+      </div>
+    </body>
+    </html>
 </body>
 </html>
