@@ -171,8 +171,64 @@
       background-color: #fff;
     }
     .m{
-     margin-left:35%;
-    }
+     margin-left:35%;}
+
+     /*Section*/
+.sponsor-section {
+  padding: 50px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.section-line {
+  height: 4px;
+  background-color: #333;
+  border: none;
+  width: 100%;
+  margin: 0;
+}
+
+.section-line::before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 60px;
+  background-color: #f00;
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sponsor-list,
+.partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sponsor-list a,
+.partner-list a {
+  display: block;
+  margin: 20px;
+}
+
+.sponsor-list img,
+.partner-list img {
+  max-height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+    
   </style>
 </head>
 <body>
@@ -235,6 +291,45 @@
    
     <button onclick="showAlert()">ROW TO GROW</button>
   </main>
+  <section class="sponsor-section reveal">
+    <h2 class="section-title">SPONSORS</h2>
+    <div class="section-line zoom"></div>
+    <div class="sponsor-list zoom">
+      <a href="https://www.autoritabacinolario.it/"><img src="https://static.wixstatic.com/media/76bff0_3781f10d19f642e09d050dee23c56790~mv2.jpg/v1/fill/w_146,h_125,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Brivio%20Colore%20x%20sito.jpg" alt="Sponsor 1"></a>
+      <a href="https://www.lariofiere.it/"><img src="https://static.wixstatic.com/media/76bff0_08f945b0aa9c478e9da7ea6a86da7e27~mv2.png/v1/fill/w_250,h_74,al_c,lg_1,q_85,enc_auto/Logo-LARIOFIERE-COMO-LECCO-Blu.png" alt="Sponsor 2"></a>
+      <a href="#"><img src="https://static.wixstatic.com/media/76bff0_88bae5db62274ecba49a6dd6357a1667~mv2.jpg/v1/fill/w_165,h_66,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Logo%20Lago%20di%20Como.jpg" alt="Sponsor 3"></a>
+      <a href="https://www.csicomo.it/"><img src="https://upload.wikimedia.org/wikipedia/it/thumb/9/9c/Centro_Sportivo_Italiano_%28logo%29.svg/910px-Centro_Sportivo_Italiano_%28logo%29.svg.png" alt="Sponsor 4"></a>  
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <br>
+  <br>
+  <br>
+    <h2 class="section-title reveal">PARTNERS</h2>
+    <div class="section-line zoom"></div>
+    <div class="partner-list zoom">
+      <a href="https://worldrowing.com/"><img src="https://static.wixstatic.com/media/76bff0_baaf2d8bc9fc46a588a30ab16b132824~mv2.png/v1/fill/w_285,h_66,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fisa.png" alt="Partner  1"></a>
+      <a href="http://www.canottaggiolombardia.it/"><img src="https://static.wixstatic.com/media/76bff0_ba9c4293480b4940b2a6cf3cbe0243e7~mv2.jpg/v1/fill/w_141,h_73,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Lombardia_Colori.jpg" alt="Partner  2"></a>
+      <a href="https://www.canottaggio.org/"><img src="https://static.wixstatic.com/media/76bff0_f1df25a980954f0b98c598db52e276c2~mv2.jpg/v1/fill/w_96,h_73,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Logo_FIC_2016.jpg" alt="Partner  3"></a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <br>
+  <br>
+  <br>
+    <h2 class="section-title reveal">
+      TECHNICAL  PARTNER</h2>
+    <div class="section-line zoom"></div>
+    <div class="partner-list zoom">
+      <a href="https://www.gdromagnosi.it/"><img src="https://20.gdromagnosi.it/img/xtra/logo.png" alt="Partner Tecnico 1"></a>
+  
+  </section>
 
   <footer>
     &copy; 2023 Il mio sito web. Tutti i diritti riservati.
