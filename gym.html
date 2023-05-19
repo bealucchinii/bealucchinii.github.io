@@ -28,44 +28,72 @@
 <html>
   <head>
     <style>
-      .video-container {
-        position: relative;
-        display: inline-block;
-      }
-      
-      .video-container video,
-      .video-container img {
-        width: 100%;
-      }
-      
-      .video-title {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: #fff;
-        font-size: 18px;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
+       body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .gym {
+      width: 400px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .gym h2 {
+      text-align: center;
+    }
+
+    .gym p {
+      text-align: justify;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe, .video-container object, .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <div class="gym">
+    <img src="https://static.wixstatic.com/media/76bff0_ef80b8653da045b8b65009a64436a635~mv2.jpg"  height="250" width="auto  alt="Palestra 1">
+    <h2>Palestra 1</h2>
+    <p>Descrizione della palestra 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed felis quis enim aliquet tincidunt non sed magna.</p>
+  </div>
+
+  <div class="gym">
     <div class="video-container">
-      <img src="https://static.wixstatic.com/media/76bff0_ef80b8653da045b8b65009a64436a635~mv2.jpg"  height="350" width="auto alt="Foto">
-      <div class="video-title">Ergometers Room (gmy1)</div>
+      <iframe width="560" height="315" src="https://video.wixstatic.com/video/76bff0_3f824ab5476a4195af1d91024ed7b467/1080p/mp4/file.mp4" frameborder="0" allowfullscreen></iframe>
     </div>
+    <h2>Palestra 2</h2>
+    <p>Descrizione della palestra 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed felis quis enim aliquet tincidunt non sed magna.</p>
+  </div>
+
+  <div class="gym">
     <div class="video-container">
-      <video src="https://video.wixstatic.com/video/76bff0_3f824ab5476a4195af1d91024ed7b467/1080p/mp4/file.mp4" controls height="350" width="auto"></video>
-      <div class="video-title">Free Body Room (gmy2)</div>
+      <iframe width="560" height="315" src="https://video.wixstatic.com/video/76bff0_0f3edf1bc4264fe4ac5c355f54ee74df/1080p/mp4/file.mp4" frameborder="0" allowfullscreen></iframe>
     </div>
-    
-    <div class="video-container">
-      <video src="https://video.wixstatic.com/video/76bff0_0f3edf1bc4264fe4ac5c355f54ee74df/1080p/mp4/file.mp4" controls   height="350" width="auto" ></video>
-      <div class="video-title">Weight Room (gmy3)</div>
-    </div>
-    
-    
-    
-  </body>
+    <h2>Wheigt Room</h2>
+    <p>Descrizione della palestra 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed felis quis enim aliquet tincidunt non sed magna.</p>
+  </div>
+</body>
+</html>
+
+
